@@ -57,6 +57,7 @@ public class Assignment2 {
                 else if(s.equals("("))stack.add(s);
                 else stack.add(s.substring(1, s.length()-1));
             }else{
+		//changes included for function calls
                 ArrayList<String> arr = new ArrayList<String>();
                 while(stack.peek().charAt(stack.peek().length()-1)!='(')arr.add(stack.pop());   
                 Collections.reverse(arr); 
@@ -65,7 +66,10 @@ public class Assignment2 {
         }
         return stack.pop();
     }
-    
+
+    //the main function for handling function calls	    	    
+    //it recursively calls itself when ')' is encountered
+    //this function is similar to the standard function for evaluating postfix string 	
     private static String getFunctionValue(String s, ArrayList<String> arr){
         if(s.equals("("))return append(((arr.size()>0)?arr.get(0):null),((arr.size()>1)?arr.get(1):null));
         String str = getFunctionValue(s.substring(0, s.length()-1));
@@ -96,7 +100,8 @@ public class Assignment2 {
     private static String getVariableValue(String s){
         return variableMap.get(s.substring(1));
     }
-    
+
+    //returns the implementation of function via "functionmap" defined above 	    
     private static String getFunctionValue(String s){
         return functionMap.get(s.substring(1));
     }
