@@ -6,6 +6,6 @@ The aim of this assignment is to understand the functioning of stacks to handle 
 Here is a detailed description of the assignment:
 http://www.cse.iitd.ac.in/~subodh/courses/COL106/a2.html
 </br>
-Note: "master" branch does not contain useful content</br>
+Note: "master" branch is divided into 2 useful branches</br>
 "Java" branch has code in java</br>
 "C++" branch has code in c++
