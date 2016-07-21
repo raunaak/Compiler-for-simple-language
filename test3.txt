@@ -1,0 +1,3 @@
+DEF A = (($1 ($2 $X)) $3)
+SET X = "white"
+SET B = ("final" $A("first" "second" "third"))
