@@ -1,0 +1,6 @@
+SET Y = "why"
+DEF A = (($1 ($2 $Y)) $3)
+DEF B = ($1 $A($2 $X "good"))
+SET Y = "because"
+SET X = "white"
+SET B = ("disturb" $B("first" "second"))

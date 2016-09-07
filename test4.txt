@@ -1,0 +1,3 @@
+DEF FOO = ($1 $2)              
+SET X = "blood"
+SET X = ("join" $FOO("first" $FOO("third" $X)))
